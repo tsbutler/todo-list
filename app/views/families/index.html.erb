@@ -1,0 +1,8 @@
+<h1>My Family Members</h1>
+
+<% @family.users.each do |member| %>
+<li>
+  <a href="/users/<%= member.id %>/show"><%= member.name %></a>
+</li>
+
+<% end %> 

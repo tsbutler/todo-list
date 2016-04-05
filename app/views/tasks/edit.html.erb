@@ -1,0 +1,8 @@
+<h1>Edit Task</h1>
+
+<%= form_tag "processed" do %>
+
+  <input type="text" name="title" value="<%= @task.title %>">
+  <input type="submit">
+
+<% end %>

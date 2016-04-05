@@ -1,0 +1,12 @@
+<h1><%= @user.name %></h1>
+
+<% @user.assignments.each do |assignment| %>
+  <li>  
+    <%= assignment.task.title %>
+
+    <%= form_tag("/assignments/#{assignment.id}", method: "delete") do %>
+      <input type="submit" value="Delete">
+    <% end %>
+
+  </li>  
+<% end %>

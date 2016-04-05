@@ -1,0 +1,8 @@
+<h1>Assign Task</h1>
+
+<%= form_tag "/assignments/#{@task.id}" do %>
+
+  <input type="integer" name="user_id">
+  <input type="submit">
+
+<% end %>
